@@ -2,10 +2,10 @@ const About = () => {
   return (
     <section id="hero" className="py-24">
       <div className="container h-full mx-auto">
-        <div className="grid gap-4 text-center">
-          <h1 className="text-5xl mb-8">About Me</h1>
+        <div className="grid gap-8 text-center">
+          <h2 className="section-title text-4xl md:text-5xl">About Me</h2>
 
-          <div className="max-w-[80%] mx-auto">
+          <div className="max-w-[90%] md:max-[80%] mx-auto">
             <p>
               Frontend Web Developer with nearly{" "}
               <strong>6 years of experience</strong>. Passionate about learning

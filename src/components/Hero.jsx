@@ -1,9 +1,12 @@
+import Pp from "../assets/pp.png";
+import CV from "../assets/cv.pdf";
+
 const Hero = () => {
   return (
-    <section id="hero" className="h-screen">
+    <section id="hero" className="md:h-screen">
       <div className="container h-full mx-auto">
-        <div className="grid grid-cols-2 items-center h-full gap-16">
-          <div className="grid justify-end gap-4 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center h-full pt-16 gap-16">
+          <div className="grid md:justify-end gap-4 text-center order-3 md:order-1">
             <h1 className="text-5xl">
               Furkan
               <br />
@@ -13,7 +16,7 @@ const Hero = () => {
             <h2 className="font-semibold text-2xl">Frontend Developer</h2>
 
             <span className="flex justify-center gap-4">
-              <a href="https://twitter.com/" target="_blank">
+              <a href="https://github.com/mfurkankayikci" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -24,7 +27,10 @@ const Hero = () => {
                 </svg>
               </a>
 
-              <a href="https://github.com/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/furkankayikci/"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -40,20 +46,18 @@ const Hero = () => {
               Frontend Web Developer with nearly 6 years of experience.
             </p>
 
-            <a href={"#"} download>
+            <a href={CV} target="_blank">
               <span className="fold-bold relative inline-block h-fit w-fit rounded border-2 border-black bg-white px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-yellow-400 hover:text-gray-900">
                 Resume
               </span>
             </a>
           </div>
 
-          <div className="grid relative">
+          <div className="grid relative justify-center order-2">
             <img
-              src={
-                "https://harris-johnsen.netlify.app/assets/hero-img-Cqh1d5RO.png"
-              }
+              src={Pp}
               alt="Profile picture of Furkan Kayikci"
-              className="h-[352px] w-[352px] object-cover z-10"
+              className="h-[352px] w-[352px] object-cover z-10 rounded-full bg-white"
             />
 
             <span className="absolute top-0 right-0 z-0 w-full h-full">

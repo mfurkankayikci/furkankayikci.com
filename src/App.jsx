@@ -1,6 +1,7 @@
 import Hero from "./components/Hero.jsx";
 import About from "./components/About.jsx";
 import Skills from "./components/Skills.jsx";
+import Footer from "./components/Footer.jsx";
 import "./app.css";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
+      <Footer />
     </>
   );
 }

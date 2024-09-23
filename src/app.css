@@ -31,7 +31,8 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+.section-title {
   color: var(--text-color);
   margin: 0;
   padding: 0;
@@ -46,7 +47,8 @@ li {
 }
 
 h1,
-h2 {
+h2,
+.section-title {
   text-transform: uppercase;
 }
 
@@ -55,7 +57,8 @@ h3 {
   font-size: 20px;
 }
 
-h1 {
+h1,
+.section-title {
   font-family: "Rubik", sans-serif;
 }
 
@@ -66,4 +69,46 @@ h1 {
 ul {
   list-style: circle;
   text-align: left;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  max-width: 26ch;
+}
+
+.skill-list span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.skill-list img {
+  width: 20px;
+}
+
+hr {
+  width: 100px;
+  height: 1px;
+  border: none;
+  background-color: var(--text-color);
+  margin: 30px auto;
+}
+
+@media (width >= 800px) {
+  .skill-list {
+    max-width: fit-content;
+    gap: 30px;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  hr {
+    width: 300px;
+  }
 }
